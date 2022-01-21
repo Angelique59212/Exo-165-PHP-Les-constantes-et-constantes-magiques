@@ -9,9 +9,25 @@
  *    longueur de la chaîne de la troisième constante ( attention aux priorités )
  */
 // TODO Votre code ici.
+const NUMBER = 12;
+const NUMBER2 = 2;
+echo NUMBER * NUMBER2;
+echo "<br><br>";
 
+const CHAINE = "C'est cool PHP!";
+echo (NUMBER + NUMBER2) * strlen(CHAINE);
+echo "<br><br>";
 
 /**
  * 6. Utilisez la bonne constante magique et éventuellement la bonne fonction pour afficher un maximum d'informations sur la page actuelle4
  */
 // TODO Votre code ici.
+echo basename(__DIR__) ."<br>";
+echo basename(__FILE__) ."<br>";
+echo basename(__CLASS__) ."<br>";
+echo maClasse::class ."<br>";
+echo basename(__LINE__) ."<br>";
+echo basename(__FUNCTION__) ."<br>";
+echo basename(__METHOD__) ."<br>";
+echo basename(__NAMESPACE__) ."<br>";
+echo basename(__TRAIT__) ."<br>";
